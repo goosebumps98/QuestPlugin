@@ -54,7 +54,7 @@ class Quest extends PluginBase{
    public function onEnable(): void{
       @mkdir($this->getDataFolder());
       @mkdir($this->getDataFolder()."language/");
-      $this->prefix = "Quest";
+      $this->prefix = "Missions";
       $this->youtube = "https://bit.ly/2HL1j28";
       $langConfig = $this->getConfig()->getNested("language");
       if(!in_array($langConfig, $this->langClass)){
